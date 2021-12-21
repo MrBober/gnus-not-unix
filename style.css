@@ -1,0 +1,122 @@
+body {
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 2em;
+	text-align: center;
+}
+
+.letter span:nth-of-type(2) {
+	animation-delay: .05s;
+}
+.letter span:nth-of-type(3) {
+	animation-delay: .1s;
+}
+.letter span:nth-of-type(4) {
+	animation-delay: .15s;
+}
+.letter span:nth-of-type(5) {
+	animation-delay: .2s;
+}
+.letter span:nth-of-type(6) {
+	animation-delay: .25s;
+}
+.letter span:nth-of-type(7) {
+	animation-delay: .3s;
+}
+.letter span:nth-of-type(8) {
+	animation-delay: .35s;
+}
+
+#gnu {
+	cursor: pointer;
+}
+
+.letter {
+	user-select: none;
+	color: deeppink;
+	position: relative;
+	display: inline-block;
+	width: auto;
+}
+
+.letter-animation-g {
+	animation: letter-g 1s forwards;
+}
+
+.letter-animation-n {
+	animation: letter-n 1s forwards;
+}
+
+.letter-animation-u {
+	animation: letter-u 1s forwards;
+}
+
+.letter-no-anim {
+	animation: letter-no-anim 1s forwards;
+}
+
+.letter-animation span {
+	animation: letterSpan 1s forwards;
+}
+
+.letter span {
+	display: inline-block;
+}
+
+.letter-color span {
+	color:indianred;
+}
+
+@keyframes letter-g {
+	60% {
+		margin-right: 30px;
+	}
+}
+
+@keyframes letter-n {
+	0% {
+		transform: translate(-84px, 0)
+	}
+	30% {
+		transform: translate(0);
+	}
+	60% {
+		margin-right: 30px;
+	}
+}
+
+@keyframes letter-u {
+	0% {
+		transform: translate(-125px, 0)
+	}
+	30% {
+		transform: translate(0);
+	}
+	60% {
+		margin-right: 30px;
+	}
+}
+
+@keyframes letter-no-anim {
+	0% {
+		transform: translate(-188px, 0);
+	}
+	30% {
+		transform: translate(0);
+	}
+}
+
+@keyframes letterSpan {
+	0% {
+		transform: translate(-100px, 0) scale(0);
+		opacity: 0;
+	}
+	60% {
+		transform: translate(20px, 0) scale(1);
+	}
+
+	100% {
+		transform: translate(0) scale(1);
+		opacity: 1;
+	}
+}
